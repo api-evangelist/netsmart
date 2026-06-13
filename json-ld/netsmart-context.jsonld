@@ -1,0 +1,265 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "fhir": "http://hl7.org/fhir/",
+    "hl7": "http://hl7.org/",
+    "smart": "http://smarthealthit.org/",
+    "davinci": "http://hl7.org/fhir/us/davinci-pdex-plan-net/",
+    "uscore": "http://hl7.org/fhir/us/core/",
+    "netsmart": "https://www.ntst.com/",
+    "careconnect": "https://careconnect.netsmartcloud.com/",
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "image": "schema:image",
+    "logo": "schema:logo",
+    "sameAs": "schema:sameAs",
+    "telephone": "schema:telephone",
+    "address": "schema:address",
+    "provider": "schema:provider",
+    "version": "schema:version",
+    "dateCreated": "schema:dateCreated",
+    "dateModified": "schema:dateModified",
+
+    "Organization": "schema:Organization",
+    "SoftwareApplication": "schema:SoftwareApplication",
+    "WebAPI": "schema:WebAPI",
+    "MedicalOrganization": "schema:MedicalOrganization",
+
+    "api": "schema:WebAPI",
+    "baseURL": "schema:url",
+    "humanURL": "schema:url",
+    "documentation": "schema:documentation",
+    "termsOfService": "schema:termsOfService",
+    "license": "schema:license",
+
+    "fhirVersion": {
+      "@id": "fhir:version",
+      "@type": "schema:Text"
+    },
+    "fhirResource": {
+      "@id": "fhir:resource",
+      "@type": "@id"
+    },
+    "fhirProfile": {
+      "@id": "fhir:profile",
+      "@type": "@id"
+    },
+    "implementationGuide": {
+      "@id": "fhir:implementationGuide",
+      "@type": "@id"
+    },
+    "capabilityStatement": {
+      "@id": "fhir:capabilityStatement",
+      "@type": "@id"
+    },
+    "smartOnFHIR": {
+      "@id": "smart:SMART",
+      "@type": "schema:Text"
+    },
+    "bulkData": {
+      "@id": "fhir:async-access",
+      "@type": "schema:Text"
+    },
+    "usCore": {
+      "@id": "uscore:StructureDefinition",
+      "@type": "@id"
+    },
+    "daVinciPDex": {
+      "@id": "davinci:StructureDefinition",
+      "@type": "@id"
+    },
+
+    "products": {
+      "@id": "schema:hasOfferCatalog",
+      "@type": "@id"
+    },
+    "myAvatar": "netsmart:myAvatar",
+    "myEvolv": "netsmart:myEvolv",
+    "myUnity": "netsmart:myUnity",
+    "GEHRIMED": "netsmart:GEHRIMED",
+    "TheraOffice": "netsmart:TheraOffice",
+
+    "authentication": {
+      "@id": "schema:actionAccessibilityRequirement",
+      "@type": "schema:Text"
+    },
+    "oauth2": "schema:accessMode",
+    "clientCredentials": "schema:accessMode",
+    "authorizationCodeFlow": "schema:accessMode",
+
+    "patientAccess": {
+      "@id": "careconnect:patient-access",
+      "@type": "@id"
+    },
+    "systemAccess": {
+      "@id": "careconnect:system-access",
+      "@type": "@id"
+    },
+    "providerDirectory": {
+      "@id": "careconnect:provider-directory",
+      "@type": "@id"
+    },
+    "serviceBaseURLs": {
+      "@id": "careconnect:service-base-urls",
+      "@type": "@id"
+    },
+
+    "behavioralHealth": "schema:MedicalSpecialty",
+    "postAcuteCare": "schema:MedicalSpecialty",
+    "humanServices": "schema:GovernmentService",
+    "interoperability": "schema:interactivityType",
+    "careCoordination": "schema:MedicalProcedure",
+    "populationHealth": "schema:MedicalProcedure",
+
+    "sandbox": {
+      "@id": "schema:offers",
+      "@type": "@id"
+    },
+    "registration": {
+      "@id": "schema:RegisterAction",
+      "@type": "@id"
+    },
+    "tutorials": {
+      "@id": "schema:LearningResource",
+      "@type": "@id"
+    },
+    "blog": {
+      "@id": "schema:Blog",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.ntst.com/",
+      "name": "Netsmart Technologies, Inc.",
+      "description": "Healthcare IT platform provider serving behavioral health, post-acute care, and human services organizations.",
+      "url": "https://www.ntst.com/",
+      "logo": "https://www.ntst.com/-/media/logos/netsmart/logo-netsmart-color.svg",
+      "telephone": "1-800-472-5509",
+      "address": {
+        "@type": "schema:PostalAddress",
+        "streetAddress": "11100 Nall Avenue",
+        "addressLocality": "Overland Park",
+        "addressRegion": "KS",
+        "postalCode": "66211",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/netsmart/",
+        "https://careconnect.netsmartcloud.com/"
+      ],
+      "products": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "myAvatar",
+          "description": "EHR platform for behavioral health and human services organizations.",
+          "url": "https://www.ntst.com/Offerings/myAvatar"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "myEvolv",
+          "description": "Cloud-based EHR for human services and behavioral health.",
+          "url": "https://www.ntst.com/Offerings/myEvolv"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "myUnity",
+          "description": "Post-acute EHR for home health, hospice, and palliative care.",
+          "url": "https://www.ntst.com/Offerings/myUnity"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "GEHRIMED",
+          "description": "EHR designed for long-term and post-acute care physicians.",
+          "url": "https://www.ntst.com/Offerings/GEHRIMED"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "TheraOffice",
+          "description": "Therapy practice management and EHR software.",
+          "url": "https://www.ntst.com/Offerings/TheraOffice"
+        }
+      ]
+    },
+    {
+      "@type": "WebAPI",
+      "@id": "https://fhir.netsmartcloud.com/provider/patient-access/v2",
+      "name": "Netsmart CareConnect Provider Patient Access API",
+      "description": "FHIR R4 API enabling patients and authorized applications to access clinical health records from Netsmart provider EHR systems.",
+      "url": "https://careconnect.netsmartcloud.com/docs/api/fhir/certified/provider/patient-access/",
+      "fhirVersion": "R4",
+      "smartOnFHIR": "2.0",
+      "usCore": "https://hl7.org/fhir/us/core/STU6.1/",
+      "provider": {
+        "@id": "https://www.ntst.com/"
+      },
+      "authentication": "SMART on FHIR 2.0 — Authorization Code Flow",
+      "documentation": "https://careconnect.netsmartcloud.com/docs/api/fhir/certified/provider/patient-access/",
+      "termsOfService": "https://careconnect.netsmartcloud.com/terms-of-service/index.html"
+    },
+    {
+      "@type": "WebAPI",
+      "@id": "https://fhir.netsmartcloud.com/provider/system-access/v2",
+      "name": "Netsmart CareConnect Provider System Access API",
+      "description": "FHIR R4 backend service API for system-to-system integration and asynchronous bulk data export from Netsmart provider EHR platforms.",
+      "url": "https://careconnect.netsmartcloud.com/docs/api/fhir/certified/provider/system-access/",
+      "fhirVersion": "R4",
+      "bulkData": "HL7 Bulk Data 2.0.0",
+      "usCore": "https://hl7.org/fhir/us/core/STU6.1/",
+      "provider": {
+        "@id": "https://www.ntst.com/"
+      },
+      "authentication": "OAuth 2.0 Client Credentials Flow",
+      "documentation": "https://careconnect.netsmartcloud.com/docs/api/fhir/certified/provider/system-access/",
+      "termsOfService": "https://careconnect.netsmartcloud.com/terms-of-service/index.html"
+    },
+    {
+      "@type": "WebAPI",
+      "@id": "https://fhir.netsmartcloud.com/payer/patient-access/v2",
+      "name": "Netsmart CareConnect Payer Patient Access API",
+      "description": "FHIR R4 API for payer organizations enabling patient-directed access to claims, clinical, and coverage data.",
+      "url": "https://careconnect.netsmartcloud.com/docs/api/fhir/certified/payer/patient-access/",
+      "fhirVersion": "R4",
+      "smartOnFHIR": "2.0",
+      "usCore": "https://hl7.org/fhir/us/core/STU6.1/",
+      "provider": {
+        "@id": "https://www.ntst.com/"
+      },
+      "authentication": "SMART on FHIR 2.0 — Authorization Code Flow",
+      "documentation": "https://careconnect.netsmartcloud.com/docs/api/fhir/certified/payer/patient-access/",
+      "termsOfService": "https://careconnect.netsmartcloud.com/terms-of-service/index.html"
+    },
+    {
+      "@type": "WebAPI",
+      "@id": "https://fhir.netsmartcloud.com/payer/provider-directory/v2",
+      "name": "Netsmart CareConnect Payer Provider Directory API",
+      "description": "Publicly accessible FHIR R4 API for discovering healthcare providers, organizations, locations, services, and insurance plans within payer networks.",
+      "url": "https://careconnect-dev.netsmartdev.com/docs/api/fhir/certified/payer/provider-directory/",
+      "fhirVersion": "R4",
+      "daVinciPDex": "https://hl7.org/fhir/us/davinci-pdex-plan-net/STU1.2/",
+      "provider": {
+        "@id": "https://www.ntst.com/"
+      },
+      "authentication": "None (public endpoint)",
+      "documentation": "https://careconnect-dev.netsmartdev.com/docs/api/fhir/certified/payer/provider-directory/"
+    },
+    {
+      "@type": "WebAPI",
+      "@id": "https://fhir.netsmartcloud.com/service-base-urls",
+      "name": "Netsmart CareConnect Service Base URLs API",
+      "description": "Public endpoint returning an HL7 FHIR R4 Bundle of Organization and Endpoint resources describing all available CareConnect service base URLs.",
+      "url": "https://careconnect.netsmartcloud.com/docs/certified/service-base-urls/",
+      "fhirVersion": "R4",
+      "smartOnFHIR": "SMART App Launch v2.2.0",
+      "provider": {
+        "@id": "https://www.ntst.com/"
+      },
+      "authentication": "None (public endpoint)",
+      "documentation": "https://careconnect.netsmartcloud.com/docs/certified/service-base-urls/"
+    }
+  ]
+}

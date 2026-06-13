@@ -1,0 +1,13 @@
+{
+  "name": "Netsmart Blog",
+  "description": "Healthcare technology blog covering post-acute care, behavioral health, human services, population health management, and EHR interoperability.",
+  "url": "https://www.ntst.com/blog",
+  "provider": {
+    "name": "Netsmart",
+    "url": "https://www.ntst.com/"
+  },
+  "feed": null,
+  "feedFormat": null,
+  "lastFetched": "2026-06-13",
+  "posts": []
+}
