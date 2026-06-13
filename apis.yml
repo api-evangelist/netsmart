@@ -1,0 +1,202 @@
+name: Netsmart
+description: >
+  Netsmart is a healthcare IT platform provider serving behavioral health,
+  post-acute care, and human services organizations. Its CareConnect integration
+  platform exposes FHIR R4 REST APIs for EHR data access, care coordination,
+  analytics, and interoperability across care settings. APIs support Patient
+  Access, System Access (bulk data), Provider Directory, and General Purpose
+  FHIR R4/STU3 resources across Netsmart EHR products including myAvatar,
+  myEvolv, myUnity, GEHRIMED, and TheraOffice.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/netsmart/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+aid: netsmart
+type: Index
+tags:
+  - Healthcare IT
+  - EHR
+  - FHIR
+  - Behavioral Health
+  - Post-Acute Care
+  - Human Services
+  - Interoperability
+  - HL7
+  - Care Coordination
+
+apis:
+
+  - name: Netsmart CareConnect Provider Patient Access API
+    description: >
+      FHIR R4 API enabling patients and authorized applications to access
+      clinical health records from Netsmart provider EHR systems including
+      myAvatar, myEvolv, myUnity, GEHRIMED, and TheraOffice. Implements
+      SMART on FHIR 2.0 and US Core 6.1.0 profiles.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    baseURL: https://fhir.netsmartcloud.com/provider/patient-access/v2
+    humanURL: https://careconnect.netsmartcloud.com/docs/api/fhir/
+    tags:
+      - FHIR R4
+      - Patient Access
+      - Provider
+      - EHR
+      - Behavioral Health
+    properties:
+      - type: Documentation
+        url: https://careconnect.netsmartcloud.com/docs/api/fhir/
+      - type: Authentication
+        url: https://careconnect.netsmartcloud.com/docs/certified/authorization/index.html
+      - type: Registration
+        url: https://careconnect.netsmartcloud.com/docs/getting-started/registration/index.html
+
+  - name: Netsmart CareConnect Provider System Access API
+    description: >
+      FHIR R4 backend service API for system-to-system integration and
+      asynchronous bulk data export from Netsmart provider EHR platforms.
+      Supports population-level data extraction per the HL7 Bulk Data 2.0.0
+      specification. Uses Client Credentials OAuth 2.0 flow.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    baseURL: https://fhir.netsmartcloud.com/provider/system-access/v2
+    humanURL: https://careconnect.netsmartcloud.com/docs/api/fhir/
+    tags:
+      - FHIR R4
+      - System Access
+      - Bulk Data
+      - Provider
+      - Interoperability
+    properties:
+      - type: Documentation
+        url: https://careconnect.netsmartcloud.com/docs/api/fhir/
+      - type: Authentication
+        url: https://careconnect.netsmartcloud.com/docs/certified/authorization/index.html
+
+  - name: Netsmart CareConnect Payer Patient Access API
+    description: >
+      FHIR R4 API for payer organizations enabling patient-directed access to
+      claims, clinical, and coverage data. Supports 30+ FHIR R4 resources
+      including ExplanationOfBenefit, Coverage, and US Core clinical resources.
+      Implements SMART on FHIR 2.0, US Core 6.1.0, and 21st Century Cures Act
+      compliance requirements.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    baseURL: https://fhir.netsmartcloud.com/payer/patient-access/v2
+    humanURL: https://careconnect.netsmartcloud.com/docs/api/fhir/certified/payer/patient-access/index.html
+    tags:
+      - FHIR R4
+      - Patient Access
+      - Payer
+      - Claims
+      - Interoperability
+    properties:
+      - type: Documentation
+        url: https://careconnect.netsmartcloud.com/docs/api/fhir/certified/payer/patient-access/index.html
+      - type: Authentication
+        url: https://careconnect.netsmartcloud.com/docs/certified/authorization/index.html
+
+  - name: Netsmart CareConnect Payer Provider Directory API
+    description: >
+      Publicly accessible FHIR R4 API for discovering healthcare providers,
+      organizations, locations, services, and insurance plans within payer
+      networks. No authentication required. Implements DaVinci PDex Plan-Net
+      1.2. Supports 9 searchable FHIR resources with flexible query parameters.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    baseURL: https://fhir.netsmartcloud.com/payer/provider-directory/v2
+    humanURL: https://careconnect-dev.netsmartdev.com/docs/api/fhir/certified/payer/provider-directory/index.html
+    tags:
+      - FHIR R4
+      - Provider Directory
+      - Payer
+      - Public API
+      - DaVinci PDex
+    properties:
+      - type: Documentation
+        url: https://careconnect-dev.netsmartdev.com/docs/api/fhir/certified/payer/provider-directory/index.html
+
+  - name: Netsmart CareConnect Service Base URLs API
+    description: >
+      Public endpoint returning an HL7 FHIR R4 Bundle of Organization and
+      Endpoint resources that describe all available CareConnect service base
+      URLs across Netsmart EHR products. Implements SMART App Launch v2.2.0
+      User-access Brands specification. No authentication required.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    baseURL: https://fhir.netsmartcloud.com
+    humanURL: https://careconnect.netsmartcloud.com/docs/certified/service-base-urls/index.html
+    tags:
+      - FHIR R4
+      - Service Discovery
+      - Public API
+      - SMART App Launch
+    properties:
+      - type: Documentation
+        url: https://careconnect.netsmartcloud.com/docs/certified/service-base-urls/index.html
+
+common:
+
+  - name: Plans
+    type: Plans
+    url: https://raw.githubusercontent.com/api-evangelist/netsmart/refs/heads/main/plans/netsmart-plans-pricing.yml
+
+  - name: Rate Limits
+    type: RateLimits
+    url: https://raw.githubusercontent.com/api-evangelist/netsmart/refs/heads/main/rate-limits/netsmart-rate-limits.yml
+
+  - name: FinOps
+    type: FinOps
+    url: https://raw.githubusercontent.com/api-evangelist/netsmart/refs/heads/main/finops/netsmart-finops.yml
+
+  - name: Documentation
+    type: Documentation
+    url: https://careconnect.netsmartcloud.com/docs/
+
+  - name: Developer Portal
+    type: Portal
+    url: https://careconnect.netsmartcloud.com/
+
+  - name: Getting Started
+    type: GettingStarted
+    url: https://careconnect.netsmartcloud.com/docs/getting-started/registration/index.html
+
+  - name: Authentication
+    type: Authentication
+    url: https://careconnect.netsmartcloud.com/docs/certified/authorization/index.html
+
+  - name: Sandbox
+    type: Sandbox
+    url: https://fhirtest.netsmartcloud.com/developers
+
+  - name: Production Developer Console
+    type: Portal
+    url: https://fhir.netsmartcloud.com/developers
+
+  - name: Terms of Service
+    type: TermsOfService
+    url: https://oauthtest.netsmartcloud.com/terms
+
+  - name: CareConnect Terms of Service
+    type: TermsOfService
+    url: https://careconnect.netsmartcloud.com/terms-of-service/index.html
+
+  - name: Tutorials
+    type: Tutorials
+    url: https://careconnect.netsmartcloud.com/docs/tutorials/index.html
+
+  - name: Postman Tutorial
+    type: Tutorials
+    url: https://careconnect-dev.netsmartdev.com/docs/tutorials/testing-fhir-patient-access-apis-with-postman/index.html
+
+  - name: Information Sharing Contact
+    type: Contact
+    url: https://www.ntst.com/lp/information-sharing
+
+  - name: Netsmart Website
+    type: Website
+    url: https://www.ntst.com/
+
+  - name: Blog
+    type: Blog
+    url: https://www.ntst.com/blog
+
+maintainers:
+
+  - FN: Kin Lane
+    email: kin@apievangelist.com

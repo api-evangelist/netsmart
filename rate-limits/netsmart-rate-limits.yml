@@ -1,0 +1,60 @@
+name: Netsmart Rate Limits
+description: >
+  Netsmart CareConnect APIs implement standard rate limiting to ensure service
+  availability and prevent abuse. Specific numeric thresholds are not publicly
+  documented. The API returns HTTP 429 when limits are exceeded and recommends
+  exponential backoff.
+
+limits:
+
+  - name: Standard API Rate Limit
+    description: >
+      General rate limiting applies to all CareConnect FHIR R4 endpoints.
+      Exact request-per-minute or request-per-day thresholds are not publicly
+      disclosed. Rate limit status is communicated via HTTP 429 responses.
+    scope: per application / per tenant
+    enforcement: HTTP 429 Too Many Requests
+    backoffStrategy: Exponential backoff recommended
+    documented: false
+
+  - name: Pagination Limits
+    description: >
+      Search result pages are limited to a configurable page size via the
+      _count parameter. Default is 100 resources per page, maximum is 500.
+    parameter: _count
+    defaultPageSize: 100
+    maxPageSize: 500
+    documented: true
+    url: https://careconnect-dev.netsmartdev.com/docs/api/fhir/certified/payer/provider-directory/index.html
+
+  - name: Bulk Data Export
+    description: >
+      System Access API supports asynchronous bulk data export per the
+      HL7 FHIR Bulk Data Access specification v2.0.0. Requests are processed
+      asynchronously; polling is required to retrieve results. No explicit
+      throughput limit is documented.
+    type: async
+    standard: Bulk Data 2.0.0
+    documented: true
+    url: https://careconnect.netsmartcloud.com/docs/api/fhir/
+
+httpStatusCodes:
+  - code: 200
+    meaning: Success
+  - code: 400
+    meaning: Invalid parameters
+  - code: 403
+    meaning: Unsupported endpoint or forbidden
+  - code: 404
+    meaning: Resource not found
+  - code: 429
+    meaning: Rate limit exceeded
+  - code: 500
+    meaning: Internal server error
+
+notes: >
+  Specific rate limit values are not publicly documented by Netsmart. Healthcare
+  enterprise APIs of this type typically enforce limits at the tenant and
+  application level. Developers should implement retry logic with exponential
+  backoff and contact Netsmart support for confirmed limit thresholds within
+  their specific integration agreement.

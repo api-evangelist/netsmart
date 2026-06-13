@@ -1,0 +1,72 @@
+name: Netsmart FinOps
+description: >
+  Financial operations guidance for integrating with Netsmart CareConnect APIs.
+  Netsmart does not publish public pricing for its API platform. Cost management
+  is primarily driven by EHR licensing agreements and partner integration terms.
+
+costModel:
+  type: enterprise-contract
+  publicPricing: false
+  selfServe: false
+  notes: >
+    Netsmart API access is typically bundled with EHR platform licenses
+    (myAvatar, myEvolv, myUnity, GEHRIMED, TheraOffice) or negotiated as part
+    of a separate vendor integration agreement. Pricing is not disclosed on the
+    public website.
+
+costDrivers:
+
+  - name: EHR Platform License
+    description: >
+      Primary cost driver. Access to CareConnect APIs is contingent on the
+      healthcare organization holding an active Netsmart EHR license. API
+      access is scoped to the licensed tenant.
+    visibility: private
+
+  - name: Third-Party Application Integration
+    description: >
+      Independent software vendors building applications on top of CareConnect
+      APIs must complete Netsmart's partner questionnaire and may be subject to
+      integration fees or certification costs.
+    url: https://www.ntst.com/lp/information-sharing
+    visibility: private
+
+  - name: Bulk Data Export Volume
+    description: >
+      System Access API bulk exports can involve large data volumes. Storage
+      and compute costs for processing exported FHIR bundles are borne by the
+      integrating application.
+    visibility: variable
+
+optimizationStrategies:
+
+  - name: Use Sandbox Environment for Development
+    description: >
+      The preview environment (fhirtest.netsmartcloud.com) provides a free
+      non-production tier for development and testing. Use this environment
+      to validate integrations before requesting production tenant access.
+    url: https://fhirtest.netsmartcloud.com/developers
+
+  - name: Pagination Tuning
+    description: >
+      Use the _count parameter (max 500) to optimize page sizes for bulk
+      reads and reduce total API call counts during data retrieval operations.
+
+  - name: Asynchronous Bulk Export
+    description: >
+      For population-level data needs, prefer the Bulk Data Export endpoint
+      over individual FHIR resource queries to minimize API call overhead and
+      reduce latency-related costs in downstream processing pipelines.
+
+  - name: Tenant Authorization Scoping
+    description: >
+      Request tenant authorization only for the specific organizations
+      relevant to your application to limit scope creep and simplify
+      compliance obligations under 21st Century Cures Act and HIPAA.
+
+contactForPricing:
+  phone: 800.842.1973
+  url: https://www.ntst.com/lp/information-sharing
+  notes: >
+    Submit an integration questionnaire or contact Netsmart sales directly
+    to obtain pricing for API access tiers and partner integration programs.

@@ -1,0 +1,50 @@
+name: Netsmart Plans and Pricing
+description: >
+  Netsmart CareConnect APIs are enterprise healthcare software integrations
+  targeted at healthcare organizations, payers, and developers building
+  FHIR-compliant applications. Pricing is not publicly disclosed and requires
+  direct engagement with Netsmart sales or completion of a partner questionnaire.
+  Access to APIs is governed by partner agreements and tenant authorization.
+
+plans:
+
+  - name: Developer / Sandbox Access
+    description: >
+      Non-production access via the preview environment for testing and
+      development. Requires creating a developer account at
+      https://fhirtest.netsmartcloud.com/developers.
+    url: https://careconnect.netsmartcloud.com/docs/getting-started/registration/index.html
+    isFree: true
+    hasTrial: true
+    features:
+      - Preview FHIR R4 APIs (Patient Access, System Access, Provider Directory)
+      - Non-production base URL: https://fhirtest.netsmartcloud.com
+      - Application registration and OAuth 2.0 / SMART on FHIR testing
+      - Postman collection support for API testing
+
+  - name: Production Partner Access
+    description: >
+      Production API access for certified application developers and healthcare
+      vendors. Requires a signed partner agreement, application registration,
+      and tenant-level authorization from Netsmart client organizations.
+    url: https://careconnect.netsmartcloud.com/docs/getting-started/registration/index.html
+    isFree: false
+    hasTrial: false
+    features:
+      - Production FHIR R4 APIs (Provider and Payer variants)
+      - Patient Access, System Access, Provider Directory APIs
+      - General Purpose R4 and STU3 APIs
+      - CCD and PatientImage APIs
+      - Bulk Data Export (asynchronous)
+      - OAuth 2.0 Authorization Code with PKCE
+      - Private Key JWT or Client Secret authentication
+      - Tenant-scoped endpoints per Netsmart client organization
+      - 21st Century Cures Act compliance
+      - US Core 6.1.0, Bulk Data 2.0.0, DaVinci PDex Plan-Net 1.2
+
+notes: >
+  Netsmart does not publish API pricing on its public website. API access is
+  bundled with EHR platform agreements (myAvatar, myEvolv, myUnity, GEHRIMED,
+  TheraOffice) or negotiated separately for third-party application vendors.
+  Developers should contact Netsmart at 800.842.1973 or submit an integration
+  questionnaire via https://www.ntst.com/lp/information-sharing.
