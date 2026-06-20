@@ -7,7 +7,7 @@ description: >
   Access, System Access (bulk data), Provider Directory, and General Purpose
   FHIR R4/STU3 resources across Netsmart EHR products including myAvatar,
   myEvolv, myUnity, GEHRIMED, and TheraOffice.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/netsmart/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
@@ -33,7 +33,7 @@ apis:
       clinical health records from Netsmart provider EHR systems including
       myAvatar, myEvolv, myUnity, GEHRIMED, and TheraOffice. Implements
       SMART on FHIR 2.0 and US Core 6.1.0 profiles.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://fhir.netsmartcloud.com/provider/patient-access/v2
     humanURL: https://careconnect.netsmartcloud.com/docs/api/fhir/
     tags:
@@ -56,7 +56,7 @@ apis:
       asynchronous bulk data export from Netsmart provider EHR platforms.
       Supports population-level data extraction per the HL7 Bulk Data 2.0.0
       specification. Uses Client Credentials OAuth 2.0 flow.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://fhir.netsmartcloud.com/provider/system-access/v2
     humanURL: https://careconnect.netsmartcloud.com/docs/api/fhir/
     tags:
@@ -78,7 +78,7 @@ apis:
       including ExplanationOfBenefit, Coverage, and US Core clinical resources.
       Implements SMART on FHIR 2.0, US Core 6.1.0, and 21st Century Cures Act
       compliance requirements.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://fhir.netsmartcloud.com/payer/patient-access/v2
     humanURL: https://careconnect.netsmartcloud.com/docs/api/fhir/certified/payer/patient-access/index.html
     tags:
@@ -99,7 +99,7 @@ apis:
       organizations, locations, services, and insurance plans within payer
       networks. No authentication required. Implements DaVinci PDex Plan-Net
       1.2. Supports 9 searchable FHIR resources with flexible query parameters.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://fhir.netsmartcloud.com/payer/provider-directory/v2
     humanURL: https://careconnect-dev.netsmartdev.com/docs/api/fhir/certified/payer/provider-directory/index.html
     tags:
@@ -118,7 +118,7 @@ apis:
       Endpoint resources that describe all available CareConnect service base
       URLs across Netsmart EHR products. Implements SMART App Launch v2.2.0
       User-access Brands specification. No authentication required.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://fhir.netsmartcloud.com
     humanURL: https://careconnect.netsmartcloud.com/docs/certified/service-base-urls/index.html
     tags:
