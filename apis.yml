@@ -130,6 +130,12 @@ apis:
       - Provider Directory
       - Payer
       - Public API
+      - Da Vinci PDEX
+    tags_raw:
+      - FHIR R4
+      - Provider Directory
+      - Payer
+      - Public API
       - DaVinci PDex
     properties:
       - type: Documentation
