@@ -62,6 +62,12 @@ apis:
     tags:
       - FHIR R4
       - Patient Access
+      - Providers
+      - EHR
+      - Behavioral Health
+    tags_raw:
+      - FHIR R4
+      - Patient Access
       - Provider
       - EHR
       - Behavioral Health
@@ -86,6 +92,12 @@ apis:
       - FHIR R4
       - System Access
       - Bulk Data
+      - Providers
+      - Interoperability
+    tags_raw:
+      - FHIR R4
+      - System Access
+      - Bulk Data
       - Provider
       - Interoperability
     properties:
@@ -105,6 +117,12 @@ apis:
     baseURL: https://fhir.netsmartcloud.com/payer/patient-access/v2
     humanURL: https://careconnect.netsmartcloud.com/docs/api/fhir/certified/payer/patient-access/index.html
     tags:
+      - FHIR R4
+      - Patient Access
+      - Payers
+      - Claims
+      - Interoperability
+    tags_raw:
       - FHIR R4
       - Patient Access
       - Payer
@@ -128,8 +146,8 @@ apis:
     tags:
       - FHIR R4
       - Provider Directory
-      - Payer
-      - Public API
+      - Payers
+      - Public APIs
       - Da Vinci PDEX
     tags_raw:
       - FHIR R4
@@ -151,6 +169,11 @@ apis:
     baseURL: https://fhir.netsmartcloud.com
     humanURL: https://careconnect.netsmartcloud.com/docs/certified/service-base-urls/index.html
     tags:
+      - FHIR R4
+      - Service Discovery
+      - Public APIs
+      - SMART App Launch
+    tags_raw:
       - FHIR R4
       - Service Discovery
       - Public API
