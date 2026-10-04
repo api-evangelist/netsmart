@@ -47,6 +47,7 @@ tags:
   - Interoperability
   - HL7
   - Care Coordination
+  - Mental Health
 
 apis:
 
@@ -60,7 +61,7 @@ apis:
     baseURL: https://fhir.netsmartcloud.com/provider/patient-access/v2
     humanURL: https://careconnect.netsmartcloud.com/docs/api/fhir/
     tags:
-      - FHIR R4
+      - FHIR
       - Patient Access
       - Providers
       - EHR
@@ -89,7 +90,7 @@ apis:
     baseURL: https://fhir.netsmartcloud.com/provider/system-access/v2
     humanURL: https://careconnect.netsmartcloud.com/docs/api/fhir/
     tags:
-      - FHIR R4
+      - FHIR
       - System Access
       - Bulk Data
       - Providers
@@ -117,7 +118,7 @@ apis:
     baseURL: https://fhir.netsmartcloud.com/payer/patient-access/v2
     humanURL: https://careconnect.netsmartcloud.com/docs/api/fhir/certified/payer/patient-access/index.html
     tags:
-      - FHIR R4
+      - FHIR
       - Patient Access
       - Payers
       - Claims
@@ -144,7 +145,7 @@ apis:
     baseURL: https://fhir.netsmartcloud.com/payer/provider-directory/v2
     humanURL: https://careconnect-dev.netsmartdev.com/docs/api/fhir/certified/payer/provider-directory/index.html
     tags:
-      - FHIR R4
+      - FHIR
       - Provider Directory
       - Payers
       - Public APIs
@@ -169,7 +170,7 @@ apis:
     baseURL: https://fhir.netsmartcloud.com
     humanURL: https://careconnect.netsmartcloud.com/docs/certified/service-base-urls/index.html
     tags:
-      - FHIR R4
+      - FHIR
       - Service Discovery
       - Public APIs
       - SMART App Launch
