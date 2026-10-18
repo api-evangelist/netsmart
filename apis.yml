@@ -39,6 +39,17 @@ aid: netsmart
 type: Index
 tags:
   - Healthcare IT
+  - Electronic Health Records
+  - FHIR
+  - Behavioral Health
+  - Post-Acute Care
+  - Human Services
+  - Interoperability
+  - HL7
+  - Care Coordination
+  - Mental Health
+tags_raw:
+  - Healthcare IT
   - EHR
   - FHIR
   - Behavioral Health
@@ -64,7 +75,7 @@ apis:
       - FHIR
       - Patient Access
       - Providers
-      - EHR
+      - Electronic Health Records
       - Behavioral Health
     tags_raw:
       - FHIR R4
