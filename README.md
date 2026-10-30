@@ -1,4 +1,4 @@
-# Netsmart (netsmart)
+# Netsmart
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,149 +66,113 @@
 
 Netsmart is a healthcare IT platform provider serving behavioral health, post-acute care, and human services organizations. Its CareConnect integration platform exposes FHIR R4 REST APIs for EHR data access, care coordination, analytics, and interoperability across care settings. APIs support Patient Access, System Access (bulk data), Provider Directory, and General Purpose FHIR R4/STU3 resources across Netsmart EHR products including myAvatar, myEvolv, myUnity, GEHRIMED, and TheraOffice.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/netsmart/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/netsmart/refs/heads/main/apis.yml)
+**Areas:** Healthcare IT · Electronic Health Records · FHIR · Behavioral Health · Post-Acute Care · Human Services · Interoperability · HL7 · Care Coordination · Mental Health
 
-## Scope
+## Netsmart on APIs.io
 
-- **Type:** Index
+Everything profiled for Netsmart is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/netsmart/](https://apis.io/providers/netsmart/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (5)
 
-- Healthcare IT
-- EHR
-- FHIR
-- Behavioral Health
-- Post-Acute Care
-- Human Services
-- Interoperability
-- HL7
-- Care Coordination
+- [Netsmart CareConnect Provider Patient Access API](https://apis.io/apis/netsmart/netsmart-careconnect-provider-patient-access-api/) — FHIR R4 API enabling patients and authorized applications to access clinical health records from Netsmart provider EHR systems including myAvatar, myEvolv,…
+- [Netsmart CareConnect Provider System Access API](https://apis.io/apis/netsmart/netsmart-careconnect-provider-system-access-api/) — FHIR R4 backend service API for system-to-system integration and asynchronous bulk data export from Netsmart provider EHR platforms. Supports…
+- [Netsmart CareConnect Payer Patient Access API](https://apis.io/apis/netsmart/netsmart-careconnect-payer-patient-access-api/) — FHIR R4 API for payer organizations enabling patient-directed access to claims, clinical, and coverage data. Supports 30+ FHIR R4 resources including…
+- [Netsmart CareConnect Payer Provider Directory API](https://apis.io/apis/netsmart/netsmart-careconnect-payer-provider-directory-api/) — Publicly accessible FHIR R4 API for discovering healthcare providers, organizations, locations, services, and insurance plans within payer networks. No…
+- [Netsmart CareConnect Service Base URLs API](https://apis.io/apis/netsmart/netsmart-careconnect-service-base-urls-api/) — Public endpoint returning an HL7 FHIR R4 Bundle of Organization and Endpoint resources that describe all available CareConnect service base URLs across…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-06-13
-- **Modified:** 2026-06-13
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### JSON-LD (1)
 
-### Netsmart CareConnect Provider Patient Access API
+Linked-data contexts for the provider's vocabulary.
 
-FHIR R4 API enabling patients and authorized applications to access clinical health records from Netsmart provider EHR systems including myAvatar, myEvolv, myUnity, GEHRIMED, and TheraOffice. Implements SMART on FHIR 2.0 and US Core 6.1.0 profiles.
+- [Netsmart Context](https://apis.io/jsonld/netsmart/netsmart-context/)
 
-- **Human URL:** [https://careconnect.netsmartcloud.com/docs/api/fhir/](https://careconnect.netsmartcloud.com/docs/api/fhir/)
-- **Base URL:** `https://fhir.netsmartcloud.com/provider/patient-access/v2`
+#### Security (1)
 
-#### Tags
+Authentication, trust centre, and vulnerability disclosure.
 
-- FHIR R4
-- Patient Access
-- Provider
-- EHR
-- Behavioral Health
+- [Netsmart Domain Security](https://apis.io/security/netsmart/netsmart-domain-security/)
 
-#### Properties
+#### Plans and pricing (1)
 
-- [Documentation](https://careconnect.netsmartcloud.com/docs/api/fhir/)
-- [Authentication](https://careconnect.netsmartcloud.com/docs/certified/authorization/index.html)
-- [Registration](https://careconnect.netsmartcloud.com/docs/getting-started/registration/index.html)
+Published plans, tiers and prices.
 
-### Netsmart CareConnect Provider System Access API
+- [Netsmart Plans Pricing](https://apis.io/plans/netsmart/netsmart-plans-pricing/)
 
-FHIR R4 backend service API for system-to-system integration and asynchronous bulk data export from Netsmart provider EHR platforms. Supports population-level data extraction per the HL7 Bulk Data 2.0.0 specification. Uses Client Credentials OAuth 2.0 flow.
+#### Rate limits (1)
 
-- **Human URL:** [https://careconnect.netsmartcloud.com/docs/api/fhir/](https://careconnect.netsmartcloud.com/docs/api/fhir/)
-- **Base URL:** `https://fhir.netsmartcloud.com/provider/system-access/v2`
+Published request limits.
 
-#### Tags
+- [Netsmart Rate Limits](https://apis.io/rate-limits/netsmart/netsmart-rate-limits/)
 
-- FHIR R4
-- System Access
-- Bulk Data
-- Provider
-- Interoperability
+#### FinOps (1)
 
-#### Properties
+What the API costs to run, by operation.
 
-- [Documentation](https://careconnect.netsmartcloud.com/docs/api/fhir/)
-- [Authentication](https://careconnect.netsmartcloud.com/docs/certified/authorization/index.html)
+- [Netsmart Finops](https://apis.io/finops/netsmart/netsmart-finops/)
 
-### Netsmart CareConnect Payer Patient Access API
+## Where to find this API
 
-FHIR R4 API for payer organizations enabling patient-directed access to claims, clinical, and coverage data. Supports 30+ FHIR R4 resources including ExplanationOfBenefit, Coverage, and US Core clinical resources. Implements SMART on FHIR 2.0, US Core 6.1.0, and 21st Century Cures Act compliance requirements.
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- **Human URL:** [https://careconnect.netsmartcloud.com/docs/api/fhir/certified/payer/patient-access/index.html](https://careconnect.netsmartcloud.com/docs/api/fhir/certified/payer/patient-access/index.html)
-- **Base URL:** `https://fhir.netsmartcloud.com/payer/patient-access/v2`
-
-#### Tags
-
-- FHIR R4
-- Patient Access
-- Payer
-- Claims
-- Interoperability
-
-#### Properties
-
-- [Documentation](https://careconnect.netsmartcloud.com/docs/api/fhir/certified/payer/patient-access/index.html)
-- [Authentication](https://careconnect.netsmartcloud.com/docs/certified/authorization/index.html)
-
-### Netsmart CareConnect Payer Provider Directory API
-
-Publicly accessible FHIR R4 API for discovering healthcare providers, organizations, locations, services, and insurance plans within payer networks. No authentication required. Implements DaVinci PDex Plan-Net 1.2. Supports 9 searchable FHIR resources with flexible query parameters.
-
-- **Human URL:** [https://careconnect-dev.netsmartdev.com/docs/api/fhir/certified/payer/provider-directory/index.html](https://careconnect-dev.netsmartdev.com/docs/api/fhir/certified/payer/provider-directory/index.html)
-- **Base URL:** `https://fhir.netsmartcloud.com/payer/provider-directory/v2`
-
-#### Tags
-
-- FHIR R4
-- Provider Directory
-- Payer
-- Public API
-- DaVinci PDex
-
-#### Properties
-
-- [Documentation](https://careconnect-dev.netsmartdev.com/docs/api/fhir/certified/payer/provider-directory/index.html)
-
-### Netsmart CareConnect Service Base URLs API
-
-Public endpoint returning an HL7 FHIR R4 Bundle of Organization and Endpoint resources that describe all available CareConnect service base URLs across Netsmart EHR products. Implements SMART App Launch v2.2.0 User-access Brands specification. No authentication required.
-
-- **Human URL:** [https://careconnect.netsmartcloud.com/docs/certified/service-base-urls/index.html](https://careconnect.netsmartcloud.com/docs/certified/service-base-urls/index.html)
-- **Base URL:** `https://fhir.netsmartcloud.com`
-
-#### Tags
-
-- FHIR R4
-- Service Discovery
-- Public API
-- SMART App Launch
-
-#### Properties
-
-- [Documentation](https://careconnect.netsmartcloud.com/docs/certified/service-base-urls/index.html)
-
-## Common Properties
-
-- [Plans](https://raw.githubusercontent.com/api-evangelist/netsmart/refs/heads/main/plans/netsmart-plans-pricing.yml)
-- [Rate Limits](https://raw.githubusercontent.com/api-evangelist/netsmart/refs/heads/main/rate-limits/netsmart-rate-limits.yml)
-- [Fin Ops](https://raw.githubusercontent.com/api-evangelist/netsmart/refs/heads/main/finops/netsmart-finops.yml)
-- [Documentation](https://careconnect.netsmartcloud.com/docs/)
-- [Portal](https://careconnect.netsmartcloud.com/)
-- [Getting Started](https://careconnect.netsmartcloud.com/docs/getting-started/registration/index.html)
-- [Authentication](https://careconnect.netsmartcloud.com/docs/certified/authorization/index.html)
-- [Sandbox](https://fhirtest.netsmartcloud.com/developers)
-- [Portal](https://fhir.netsmartcloud.com/developers)
-- [Terms of Service](https://oauthtest.netsmartcloud.com/terms)
-- [Terms of Service](https://careconnect.netsmartcloud.com/terms-of-service/index.html)
-- [Tutorials](https://careconnect.netsmartcloud.com/docs/tutorials/index.html)
-- [Tutorials](https://careconnect-dev.netsmartdev.com/docs/tutorials/testing-fhir-patient-access-apis-with-postman/index.html)
-- [Contact](https://www.ntst.com/lp/information-sharing)
 - [Website](https://www.ntst.com/)
+- [Documentation](https://careconnect.netsmartcloud.com/docs/)
+- [Getting started](https://careconnect.netsmartcloud.com/docs/getting-started/registration/index.html)
 - [Blog](https://www.ntst.com/blog)
+- [Terms of service](https://oauthtest.netsmartcloud.com/terms)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 28.7** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.4 |
+| Contract quality | 14.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 52.4 |
+| Access clarity | 28.9 |
+
+**Agent readiness 5.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.4** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/netsmart/](https://apis.io/providers/netsmart/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Netsmart: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/netsmart/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
